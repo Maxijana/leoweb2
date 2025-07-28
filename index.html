@@ -45,9 +45,11 @@
 
     <div class="kontakt-formular">
       <h3>Kostenlose Anfrage</h3>
-      <form id="kontaktForm" action="https://formsubmit.co/service.schaeferleo@gmail.com" method="POST">
+      <form id="kontaktForm">
+        <!-- FormSubmit konfiguracija -->
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://maxijana.github.io/Allaroundhandwerk/">
+        <input type="hidden" name="_subject" value="Neue Anfrage über Ihre Website!">
+        <input type="hidden" name="_template" value="table">
 
         <label for="name">Ihr Name</label>
         <input type="text" id="name" name="name" placeholder="Ihr Name" required>
@@ -61,9 +63,7 @@
         <button type="submit">Anfrage senden</button>
       </form>
 
-      <div id="formMessage" style="display:none; margin-top: 15px; color: green;">
-        Vielen Dank für Ihre Anfrage! Wir werden uns in Kürze bei Ihnen melden.
-      </div>
+      <div id="formMessage" style="display:none; margin-top: 15px;"></div>
     </div>
   </section>
 
